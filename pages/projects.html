@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Jenny's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- FONTS & ICONS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lato", sans-serif;
+}
+
+.w3-bar,
+h1,
+button {
+	font-family: "Montserrat", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.fa-anchor,
+.fa-coffee {
+	font-size: 200px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* Float four columns side by side */
+
+.column {
+	float: left;
+	width: 25%;
+	padding: 0 10px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+	margin: 0 -5px;
+}
+
+
+/* Clear floats after the columns */
+
+.row1:after,
+.row2:after,
+.row3:after,
+.row4:after,
+.row5:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Style the counter cards */
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+	margin: 10px 0px;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.card {
+		height: auto;
+	}
+}
+</style>
+
+<body>
+	<!-- NAVBAR -->
+	<div class="w3-top w3-white">
+		<div class="w3-bars w3-center w3-large"> <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-text-blue w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<h1><a href="#" class="w3-bar-item w3-button w3-hover-white w3-hover-text-blue" sstyle="font-weight: bold;">Jenny Hillary Dcruz</a></h1> </div>
+		<div class="w3-bars w3-center w3-large"> <a href="mailto:jendcruz23@gmail.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-text-blue w3-hover-white w3-border-right">jendcruz23@gmail.com</a> <a class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-border-right">Toronto, Canada</a>
+			<a href="https://www.linkedin.com/in/jennydcruz/" class="w3-bar-item w3-button w3-hide-small w3-hover-text-blue w3-hover-white"> <i class="fa fa-linkedin w3-hover-opacity"></i> </a>
+			<a href="https://github.com/jendcruz22" class="w3-bar-item w3-button w3-hide-small w3-hover-text-blue w3-hover-white"> <i class="fa fa-github w3-hover-opacity"></i> </a>
+			<a href="https://jendcruz23.medium.com/" class="w3-bar-item w3-button w3-hide-small w3-hover-text-blue w3-hover-white"> <i class="fa fa-medium w3-hover-opacity"></i> </a>
+		</div>
+		<div class="w3-bars w3-center w3-large w3-border-bottom"> <a href="../index.html#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-text-blue w3-hover-white">Back to Home page</a> </div>
+		<!-- NAVBAR FOR SMALL SCREENS -->
+		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"> <a href="../index.html#objective" class="w3-bar-item w3-button w3-padding-large">Objective</a> <a href="../index.html#education" class="w3-bar-item w3-button w3-padding-large">Education</a> <a href="../index.html#projects" class="w3-bar-item w3-button w3-padding-large">Projects</a> <a href="../index.html#publications" class="w3-bar-item w3-button w3-padding-large">Publications</a> <a href="../index.html#work" class="w3-bar-item w3-button w3-padding-large">Work Experience</a> <a href="../index.html#certifications" class="w3-bar-item w3-button w3-padding-large">Certifications</a> <a href="../index.html#volunteer" class="w3-bar-item w3-button w3-padding-large">Volunteer Experience</a> <a href="../index.html#extracurricular" class="w3-bar-item w3-button w3-padding-large">Extracurricular</a> </div>
+	</div>
+	<!-- REFERENCE: https://www.w3schools.com/howto/howto_css_column_cards.asp -->
+	<div class="projectCards" style="padding:200px 36px 30px 36px">
+		<h2 class="w3-center">Projects</h2>
+		<div class="row1">
+			<div class="column">
+				<div class="card" style="height: 500px;">
+					<h2>DEEP AUDIOBOOK TUNER</h2>
+					<p>Using a sentiment analysis model and a music generation model this application generates emotionally relevant background musical scores for audiobooks.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/DeepAudiobookTunerApp">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 500px;">
+					<h2>SENTIMENT ANALYSIS OF VOICE NOTES</h2>
+					<p>The SAVN system consists of an Audio Based Sentiment Analysis (ABSA) model to analyze the sentiments being portrayed in a voice note which will be hosted on the AWS cloud service platform in order to provide individuals a reliable way of measuring the human quality of spoken conversations.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/SentimentAnalysisOfVoiceNotes">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 500px;">
+					<h2>COHN</h2>
+					<p>COHN (Classification of hindi news): In this project, a Hindi News Classification model is developed, which uses the Hindi BERT model and attempts to use transfer learning on the model to classify a set of Hindi news snippets into its respective predefined categories.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/danlobo1999/classification-of-hindi-news">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 500px;">
+					<h2>REDUNDANCY REMOVER</h2>
+					<p>I created a web application called 'Redundancy Remover' using Python, Flask, HTML, CSS, and JavaScript that takes several images as an input, searches for similar images among them, deletes copies of an existing image and produces a zipped file of single copies of all the uploaded images as an output.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/RedundancyRemover">View Project</a> </button>
+				</div>
+			</div>
+		</div>
+		<div class="row2">
+			<div class="column">
+				<div class="card" style="height: 430px;">
+					<h2>FACEBOOK DATA ANALYSIS USING HADOOP</h2>
+					<p>This project analyzes Facebook’s user activity data using Hadoop in order to gain an understanding about the users that can aid with a business’ decision making. For example in advertising.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://jennysresume.netlify.app/portfolio/assets/Projects%20documentation/FBDA.pdf">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 430px;">
+					<h2>TELEPHONE DIRECTORY</h2>
+					<p>The telephone directory native application made using Flutter provides the user with simple, yet useful and essential features that help manage all the existing or new contacts.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/ContactManagement-Flutter">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 430px;">
+					<h2>CALCULATOR - REACT</h2>
+					<p>This application is a basic calculator that has been developed using React Js.</p>
+					<b4utton class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://calculator-with-reactjs.netlify.app/">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 430px;">
+					<h2>APPLE WEBSITE'S REPLICA</h2>
+					<p>Apple has one of the most fascinating, smooth and inspiring websites. This lead me to create this project. It is a non-responsive replica of Apple's AirPods website.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://apple-rep.netlify.app/">View Project</a> </button>
+				</div>
+			</div>
+		</div>
+		<div class="row3">
+			<div class="column">
+				<div class="card" style="height: 400px;">
+					<h2>COVID-19 TRACKER</h2>
+					<p>To be informed and aware about the gravitas of the pandemic it's necessary to view the daily global cases and especially to know how your country is doing. For that very reason I made this react application.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://covid19-2020-tracker.netlify.app/">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 400px;">
+					<h2>NASA'S ASTRONOMY PICTURE OF THE DAY</h2>
+					<p>This is a React application that displays NASA's Astronomy Picture of the Day (APOD). It changes everyday.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://nasa-apod-daily.netlify.app/">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 400px;">
+					<h2>EXPENSE TRACKER</h2>
+					<p>Expense Tracking is an important part of creating a budget for any and every purpose. This application has been created using React.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://expensetracker-temp.netlify.app/">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 400px;">
+					<h2>SEARCH ENGINE</h2>
+					<p>As the name suggests, this project allows the user to search for information on any topic. This application is made using Python, Flask, Wolfram and Wikipedia API keys.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/SearchEngine">View Project</a> </button>
+				</div>
+			</div>
+		</div>
+		<div class="row4">
+			<div class="column">
+				<div class="card" style="height: 400px;">
+					<h2>WEDDING WEBSITE</h2>
+					<p>This is a wedding website that I created using CSS, HTML, JavaScript, jQuery, etc.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://alistairandjesmy.netlify.app/">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 400px;">
+					<h2>ADOBE PHOTOSHOP SAMPLES</h2>
+					<p>I completed an online course on Adobe photoshop and my work on a few sample images using the same can be found on this website linked below.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://adobework.netlify.app/">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 400px;">
+					<h2>BOOK COVER RECOGNITION SYSTEM</h2>
+					<p>This project was created to recognise the text off of a book cover applying the concept of Optical Character Recognition (OCR) to images using Tesseract and Python.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/Book_Cover_Recognition_System">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 400px;">
+					<h2>AMAJUNA</h2>
+					<p>Made an e-commerce website for selling second hand products using HTML, AJAX, CSS, JavaScript, PHP and MySQL.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/AMAJUNA">View Project</a> </button>
+				</div>
+			</div>
+		</div>
+		<div class="row5">
+			<div class="column">
+				<div class="card" style="height: 380px;">
+					<h2>CONNECT FOUR GAME</h2>
+					<p>Programmed a two player connect four game in Python and pygame features.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/Connect-four">View Project</a> </button>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card" style="height: 380px;">
+					<h2>CONTACT MANAGEMENT SYSTEM</h2>
+					<p>Created a contact management in C programming language to create, edit, view, add, delete contacts and their address using queue data structures.</p>
+					<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-hover-text-blue w3-hover-white"> <a id="resumeBtn" href="https://github.com/jendcruz22/ContactManagementSystem">View Project</a> </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+		<div class="container">
+			<div class="copyright"> Copyright &copy;
+				<script>
+				document.write(new Date().getFullYear());
+				</script> All Rights Reserved. </div>
+		</div>
+	</footer>
+	<script>
+	// Used to toggle the menu on small screens when clicking on the menu button
+	function myFunction() {
+		var x = document.getElementById("navDemo");
+		if(x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		} else {
+			x.className = x.className.replace(" w3-show", "");
+		}
+	}
+	</script>
+</body>
+
+</html>
